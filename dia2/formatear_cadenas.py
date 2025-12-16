@@ -11,4 +11,18 @@ placa="UIQ32F"
 print(f"Mi moto es de color  {color} y su placa es {placa}")
 
 
+print("mi moto es de color", color,"y su placa es", placa)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
