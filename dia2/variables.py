@@ -1,5 +1,3 @@
-nombre="camilo"
-print(nombre)
-
-nombre="jholman"
-print(nombre)
+edad=10
+edad2=10
+print(edad+edad2)
