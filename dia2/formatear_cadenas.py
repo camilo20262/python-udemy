@@ -24,5 +24,3 @@ print("mi moto es de color", color,"y su placa es", placa)
 
 
 
-
-
