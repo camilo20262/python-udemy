@@ -1,2 +1,4 @@
-nombre=input("Dime tu nombre: ")
-print("Hola "+nombre)
+nombre="Julia"
+apellido=" Roberts"
+nombrecompleto=nombre + apellido
+print(nombrecompleto)
