@@ -11,3 +11,6 @@ print(consulta)
 
 cliente["pais"]="Colombia" # Agrega una nueva clave 'pais' con su valor
 print(cliente)
+
+cliente["peso"]=85 # Modifica el valor de la clave 'peso'
+print(cliente)
