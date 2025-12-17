@@ -16,4 +16,4 @@ cliente["peso"]=85 # Modifica el valor de la clave 'peso'
 print(cliente)
 
 del cliente["talla"] # Elimina la clave 'talla' y su valor
-print(cliente) 
+print(cliente)
