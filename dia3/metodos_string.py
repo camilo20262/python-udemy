@@ -6,3 +6,6 @@ print(prueba)
 
 prueba = texto.lower().capitalize() # Convierte la primera letra en mayuscula
 print(prueba)
+
+prueba = texto.title() # Convierte la primera letra de cada palabra en mayuscula
+print(prueba)
