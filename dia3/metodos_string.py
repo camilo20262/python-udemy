@@ -1,3 +1,6 @@
+from pydoc import text
+
+
 texto= "esto es un texto de preuba para probar funciones de strings"
 prueba = texto.upper() # Convierte todo a mayusculas
 print(prueba)
@@ -12,3 +15,7 @@ print(prueba)
 
 prueba = texto.split() # Convierte el texto en una lista de palabras
 print(prueba)
+
+texto2= "esto-es-un-texto-de-preuba-para-probar-funciones-de-strings"
+prueba2= texto2.split("-") # Convierte el texto en una lista de palabras usando un separador
+print(prueba2)
