@@ -22,3 +22,6 @@ lista.sort()
 print(lista) # Ordena la lista en orden alfabetico
 lista.reverse()
 print(lista) # Invierte el orden de la lista
+
+del lista[1] # Elimina el elemento en el indice 1
+print(lista)
