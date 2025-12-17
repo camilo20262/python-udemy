@@ -9,3 +9,6 @@ print(prueba)
 
 prueba = texto.title() # Convierte la primera letra de cada palabra en mayuscula
 print(prueba)
+
+prueba = texto.split() # Convierte el texto en una lista de palabras
+print(prueba)
