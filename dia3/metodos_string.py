@@ -19,3 +19,11 @@ print(prueba)
 texto2= "esto-es-un-texto-de-preuba-para-probar-funciones-de-strings"
 prueba2= texto2.split("-") # Convierte el texto en una lista de palabras usando un separador
 print(prueba2)
+
+
+a = "Aprender"
+b = "Python"
+c = "es"
+d = "genial"
+e="".join([a,b,c,d])
+print(e)
