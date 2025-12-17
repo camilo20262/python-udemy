@@ -6,5 +6,13 @@ print(mi_lista[0]) # Accede al primer elemento de la lista
 print(mi_lista[-1]) # Accede al ultimo elemento de la lista
 print(mi_lista[1:4]) # Accede a una porcion de la lista desde el indice 1 hasta el 3
 mi_lista2=["f","g","h","i","j"]
-print(mi_lista+mi_lista2) # Une dos listas
+mi_lista3= mi_lista + mi_lista2 # Une dos listas
+print(mi_lista3)
+mi_lista3.append("k") # Agrega un elemento al final de la lista
+print(mi_lista3)
+
+mi_lista3.pop() # Elimina el ultimo elemento de la lista
+print(mi_lista3)
+mi_lista3.pop(0) # Elimina el elemento en el indice 0
+print(mi_lista3)
 
