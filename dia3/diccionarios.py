@@ -8,3 +8,6 @@ print(valor)
 cliente = {'nombre': 'Juan', 'apellido': 'Fuentes','peso':88, 'talla':1.75}
 consulta = (cliente ['apellido']) # Accede al valor de la clave 'apellido'
 print(consulta)
+
+cliente["pais"]="Colombia" # Agrega una nueva clave 'pais' con su valor
+print(cliente)
