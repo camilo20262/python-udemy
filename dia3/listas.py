@@ -16,3 +16,9 @@ print(mi_lista3)
 mi_lista3.pop(0) # Elimina el elemento en el indice 0
 print(mi_lista3)
 
+
+lista = ['g','f','b','m','c']
+lista.sort()
+print(lista) # Ordena la lista en orden alfabetico
+lista.reverse()
+print(lista) # Invierte el orden de la lista
