@@ -1,6 +1,3 @@
-from pydoc import text
-
-
 texto= "esto es un texto de preuba para probar funciones de strings"
 prueba = texto.upper() # Convierte todo a mayusculas
 print(prueba)
@@ -25,5 +22,14 @@ a = "Aprender"
 b = "Python"
 c = "es"
 d = "genial"
-e="".join([a,b,c,d])
+e="".join([a,b,c,d]) # Une una lista de palabras en un solo texto sin espacios
 print(e)
+
+
+
+texto= "esto es un texto de preuba para probar funciones de strings"
+cambiar = texto.replace("texto", "fragmento") # Reemplaza una palabra por otra
+print(cambiar)
+cambiar = texto.replace(" ", "_") # Reemplaza los espacios por guiones bajos
+print(cambiar)
+
