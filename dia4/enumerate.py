@@ -8,3 +8,11 @@ print("-------------------")
 tupla=list(enumerate(lista))#crear una tupla de indices y letras usando enumerate
 print(tupla) #imprimir la tupla de indices y letras
 print(tupla[2][0]) #imprimir el indice del tercer elemento
+
+
+print("-------------------")
+lista_nombres = ["Marcos", "Laura", "Mónica", "Javier", "Celina", "Marta", "Darío", "Emiliano", "Melisa"]
+
+for indice,nombre in enumerate(lista_nombres):
+    if nombre.startswith("M"):
+        print(indice, nombre)
