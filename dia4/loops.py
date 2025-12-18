@@ -4,10 +4,28 @@ for letra in lista: #iterar sobre cada letra en la lista
     print(f"letra es : {letra} en la posicion {posicion}") #imprimir la letra y su posicion
 
 
-
+print("-------------------")
 lista1= ["camilo", "ana", "juan", "pedro"] #lista de nombres
 for nombre in lista1: #iterar sobre cada nombre en la lista
     if nombre.startswith("a"): #verificar si el nombre empieza con la letra "a"
         print(f"{nombre} empieza con la letra a")   #imprimir que el nombre empieza con "a"
     else:
         print(f"{nombre} no empieza con la letra a") #imprimir que el nombre no empieza con "a"
+
+
+print("-------------------")
+palabra="Python" #definir una palabra
+for letra in palabra: #iterar sobre cada letra en la palabra
+    print(letra) #imprimir cada letra
+
+print("-------------------")
+
+
+dic = {'nombre': 'Camilo', 'edad': 25, 'ciudad': 'Bogota'} #definir un diccionario
+for ite in dic:
+    print(ite)
+    print(dic[ite])  #imprimir el valor asociado a cada clave en el diccionario
+
+print("-------------------")
+for a,b in dic.items(): #iterar sobre los items del diccionario
+    print(f"{a} : {b}") #imprimir clave y valor
