@@ -29,3 +29,5 @@ for ite in dic:
 print("-------------------")
 for a,b in dic.items(): #iterar sobre los items del diccionario
     print(f"{a} : {b}") #imprimir clave y valor
+
+print("-------------------")
