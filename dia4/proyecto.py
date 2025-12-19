@@ -24,4 +24,3 @@ while intentos <8:
             break
         case _:
             print("Error inesperado")
-        
