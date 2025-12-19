@@ -1,19 +1,17 @@
-from calendar import c
 
+def saludar_persona(nombre):#Función que saluda a una persona por su nombre
+    print("Hola, como estas? "+nombre)#Imprime el saludo
 
-def saludar_persona(nombre):
-    print("Hola, como estas? "+nombre)
+saludar_persona("Camila")#Llama a la función con el nombre "Camila"
 
-saludar_persona("Camila")
-
-def bienvenida(nombre_persona):
-    print(f"¡Bienvenido {nombre_persona}!")
-bienvenida("Andres")
+def bienvenida(nombre_persona):#Función que da la bienvenida a una persona
+    print(f"¡Bienvenido {nombre_persona}!")#Imprime el mensaje de bienvenida
+bienvenida("Andres")#Llama a la función con el nombre "Andres"s
 
 
 
-def cuadrado(un_numero):
-    return un_numero**2
+def cuadrado(un_numero):#Calcula el cuadrado de un número
+    return un_numero**2# Retorna el resultado
 
-valor=cuadrado(5)
-print(valor)
+valor=cuadrado(5)#Imprime el valor retornado por la función
+print(valor)#25
