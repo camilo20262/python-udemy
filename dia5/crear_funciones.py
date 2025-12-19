@@ -15,3 +15,11 @@ def cuadrado(un_numero):#Calcula el cuadrado de un número
 
 valor=cuadrado(5)#Imprime el valor retornado por la función
 print(valor)#25
+
+
+def multiplcar(num1,num2):#Función que multiplica dos números
+    return num1*num2#Retorna el producto de dos números
+
+resultado=multiplcar(5,2)#Llama a la función con los números 5 y 2
+print(resultado)#10
+
