@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import shutil
 
 nombre = input("Dime tu nombre: ")
 print(f"Bienvenido/a {nombre}")
@@ -20,7 +21,7 @@ def abrir_leer(ruta): #función para abrir y leer un archivo
     return contenido#retornar el contenido leído
 
 def mostrar_menu():
-    print("\n Bienvenidos al menu ")
+    print("\n Bienvenido al menu ", nombre)
     print("1. leer receta")
     print("2. crear receta ")
     print("3. crear categoria ")
@@ -133,4 +134,33 @@ while True:
                     archivo.close() #cerrar el archivo
                     print(f"Receta '{titulo}' agregada a la categoria carnes.")
                     break
-                    
+        case "3":
+            ruta = os.chdir('C:\\Users\\camif\\Recetas') #cambiar el directorio actual a la ruta especificada      
+            nueva_categoria = input("Ingrese el nombre de la nueva categoria: ")
+            os.makedirs('C:\\Users\\camif\\Recetas\\' + nueva_categoria) #crear un nuevo directorio en la ruta especificada
+            print(f"Categoria '{nueva_categoria}' creada.")
+        case "4":
+            import os
+
+            os.chdir('C:\\Users\\camif\\Recetas')
+
+            eliminar_receta = input("Ingrese el nombre exacto de la receta (con extensión): ")
+
+            if os.path.exists(eliminar_receta):
+                os.remove(eliminar_receta)
+                print(f"Receta '{eliminar_receta}' eliminada.")
+            else:
+                print("La receta no existe.")
+        case "5":
+            carpeta = Path("C:/Users/camif/Recetas")
+            nombre_categoria = input("Ingrese el nombre de la categoria a eliminar: ")
+            carpeta = carpeta / nombre_categoria
+            if carpeta.exists():
+                shutil.rmtree(carpeta)
+                print("Carpeta eliminada con todo su contenido")
+                break
+            else:
+                print("La carpeta no existe")
+        case "6":
+            print("Finalizando el programa. ¡Hasta luego!")
+            break
