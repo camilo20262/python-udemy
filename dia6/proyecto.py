@@ -38,11 +38,54 @@ while True:
                 print("Categoria no valida. Intente de nuevo.")
                 categoria = input("Categoria: ")
             while categoria =="carnes":
-                print("cual recetas de carnes quisieras leer?: \n - Entrecot al Malbec \n - Matambre a la Pizza")
+                print("cual recetas de carnes quisieras leer?: \n -1.Entrecot al Malbec \n -2.Matambre a la Pizza")
                 receta = input("Receta: ")
-                if receta == "Entrecot al Malbec":
+                if receta == "1":
                     carnes1= open('C:\\Users\\camif\\Recetas\\Carnes\\Entrecot al Malbec.txt','r') #abrir el archivo en modo lectura
                     print(carnes1.read()) #leer y mostrar el contenido del archivo
-                elif receta == "Matambre a la Pizza":
+                    break
+                elif receta == "2":
                     carnes2= open('C:\\Users\\camif\\Recetas\\Carnes\\Matambre a la Pizza.txt','r') #abrir el archivo en modo lectura
                     print(carnes2.read()) #leer y mostrar el contenido del archivo
+                    break
+                else:
+                    print("\nReceta no valida. Intente de nuevo.")
+            while categoria =="ensaladas":
+                print("cual recetas de ensaladas quisieras leer?: \n -1.Ensalada Griega \n -2.Ensalada Mediterranea")
+                receta = input("Receta: ")
+                if receta == "1":
+                    ensalada1= open('C:\\Users\\camif\\Recetas\\Ensaladas\\Ensalada Griega.txt','r') #abrir el archivo en modo lectura
+                    print(ensalada1.read()) #leer y mostrar el contenido del archivo
+                    break
+                elif receta == "2":
+                    ensalada2= open('C:\\Users\\camif\\Recetas\\Ensaladas\\Ensalada Mediterranea.txt','r') #abrir el archivo en modo lectura
+                    print(ensalada2.read()) #leer y mostrar el contenido del archivo
+                    break
+                else:
+                    print("\nReceta no valida. Intente de nuevo.")
+            while categoria =="pastas":
+                print("cual recetas de pastas quisieras leer?: \n -1.Canelones de Espinaca \n -2.Ravioles de Ricotta")
+                pasta = input("Receta: ")
+                if pasta == "1":
+                    pasta1= open('C:\\Users\\camif\\Recetas\\Pastas\\Canelones de Espinaca.txt','r') #abrir el archivo en modo lectura
+                    print(pasta1.read()) #leer y mostrar el contenido del archivo
+                    break
+                elif pasta == "2":
+                    pasta2= open('C:\\Users\\camif\\Recetas\\Pastas\\Ravioles de Ricotta.txt','r') #abrir el archivo en modo lectura
+                    print(pasta2.read()) #leer y mostrar el contenido del archivo
+                    break
+                else:
+                    print("\nReceta no valida. Intente de nuevo.")   
+            while categoria =="postres":
+                print("cual recetas de postres quisieras leer?: \n -1.Compote de manzana \n -2.Tarta de frambuesa")
+                postre = input("Receta: ")
+                if postre == "1":
+                    postre1= open('C:\\Users\\camif\\Recetas\\Postres\\Compota de Manzana.txt','r') #abrir el archivo en modo lectura
+                    print(postre1.read()) #leer y mostrar el contenido del archivo
+                    break
+                elif postre == "2":
+                    postre2= open('C:\\Users\\camif\\Recetas\\Postres\\Tarta de Frambuesa.txt','r') #abrir el archivo en modo lectura
+                    print(postre2.read()) #leer y mostrar el contenido del archivo
+                    break
+                else:
+                    print("\nReceta no valida. Intente de nuevo.")        
