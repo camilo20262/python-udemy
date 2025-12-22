@@ -1,6 +1,4 @@
-hola este es un texto 
-de prueba 
+Primera línea
+Segunda línea
+Tercera línea
 
-para abrir y editar 
-tipos de archivos 
-en python
