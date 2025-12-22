@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 nombre = input("Dime tu nombre: ")
 print(f"Bienvenido/a {nombre}")
@@ -88,4 +89,48 @@ while True:
                     print(postre2.read()) #leer y mostrar el contenido del archivo
                     break
                 else:
-                    print("\nReceta no valida. Intente de nuevo.")        
+                    print("\nReceta no valida. Intente de nuevo.")
+        case "2":      
+              ruta = os.chdir('C:\\Users\\camif\\Recetas') #cambiar el directorio actual a la ruta especificada
+              print("Que categoria desea elegir?\n carnes\n ensaladas\n pastas \n postres")  
+              categoria = input("Categoria: ")
+              while categoria not in ["carnes", "ensaladas", "pastas", "postres"]:
+                  print("Categoria no valida. Intente de nuevo.")
+                  categoria = input("Categoria: ")
+              while categoria =="ensaladas":
+                    ruta = os.chdir('C:\\Users\\camif\\Recetas\\Ensaladas') #cambiar el directorio actual a la ruta especificada
+                    titulo=input("Ingrese el titulo de la nueva receta de ensaladas: ")
+                    nueva_receta = input("Ingrese el nombre de la nueva receta de ensaladas: ")
+                    archivo = open(titulo,'a') #abrir el archivo en modo lectura
+                    archivo.write(nueva_receta) #leer y mostrar el contenido del archivo
+                    archivo.close() #cerrar el archivo
+                    print(f"Receta '{titulo}' agregada a la categoria ensaladas.")
+                    break
+              while categoria =="pastas":
+                    ruta = os.chdir('C:\\Users\\camif\\Recetas\\Pastas') #cambiar el directorio actual a la ruta especificada
+                    titulo=input("Ingrese el titulo de la nueva receta de pastas: ")
+                    nueva_receta = input("Ingrese el nombre de la nueva receta de pastas: ")
+                    archivo = open(titulo,'a') #abrir el archivo en modo lectura
+                    archivo.write(nueva_receta) #leer y mostrar el contenido del archivo
+                    archivo.close() #cerrar el archivo
+                    print(f"Receta '{titulo}' agregada a la categoria pastas.")
+                    break
+              while categoria =="postres":
+                    ruta = os.chdir('C:\\Users\\camif\\Recetas\\Postres') #cambiar el directorio actual a la ruta especificada
+                    titulo=input("Ingrese el titulo de la nueva receta de postres: ")
+                    nueva_receta = input("Ingrese el nombre de la nueva receta de postres: ")
+                    archivo = open(titulo,'a') #abrir el archivo en modo lectura
+                    archivo.write(nueva_receta) #leer y mostrar el contenido del archivo
+                    archivo.close() #cerrar el archivo
+                    print(f"Receta '{titulo}' agregada a la categoria postres.")
+                    break
+              while categoria =="carnes":
+                    ruta = os.chdir('C:\\Users\\camif\\Recetas\\Carnes') #cambiar el directorio actual a la ruta especificada
+                    titulo=input("Ingrese el titulo de la nueva receta de carnes: ")
+                    nueva_receta = input("Ingrese el nombre de la nueva receta de carnes: ")
+                    archivo = open(titulo,'a') #abrir el archivo en modo lectura
+                    archivo.write(nueva_receta) #leer y mostrar el contenido del archivo
+                    archivo.close() #cerrar el archivo
+                    print(f"Receta '{titulo}' agregada a la categoria carnes.")
+                    break
+                    
