@@ -1,7 +1,7 @@
-#mi_archivo= open('prueba.txt') #abrir el archivo en modo lectura por defecto
-#contenido= mi_archivo.read() #leer todo el contenido del archivo
-#print(contenido) #imprimir el contenido en la consola
-#mi_archivo.close() #cerrar el archivo
+mi_archivo2= open('prueba.txt') #abrir el archivo en modo lectura por defecto
+contenido= mi_archivo2.read() #leer todo el contenido del archivo
+print(contenido) #imprimir el contenido en la consola
+mi_archivo2.close() #cerrar el archivo
 
 mi_archivo = open("prueba.txt", encoding="utf-8")
 
