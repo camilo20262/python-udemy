@@ -1,0 +1,6 @@
+hola este es un texto 
+de prueba 
+
+para abrir y editar 
+tipos de archivos 
+en python
