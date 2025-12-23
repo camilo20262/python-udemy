@@ -12,6 +12,11 @@ class Animal:
 class Pajaro(Animal):
     def hablar(self):
         print("pio, pio")
+    def volar(self,metros):
+        print(f"el pajaro vuela {metros} metros")
+
+
+
 piolin= Pajaro("amarillo",3)
 
-piolin.hablar()
+piolin.volar(20)
