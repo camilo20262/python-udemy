@@ -15,3 +15,11 @@ piolin = Pajaro("Amarillo","Canario") # Crear una instancia de la clase Pajaro
 
 piolin.piar() # Llamar al método piar
 piolin.volar(100) # Llamar al método volar con 100 metros
+
+class Mago:
+    def  lanzar_hechizo(self):
+        print("¡Abracadabra!")
+        
+merlin=Mago()
+
+merlin.lanzar_hechizo()
