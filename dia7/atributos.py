@@ -21,3 +21,6 @@ casa_blanca =Casa("blanco",4)
 
 print(casa_blanca.color)  # blanco
 print(casa_blanca.cantidad_pisos)  # 4
+
+
+
