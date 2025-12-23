@@ -10,6 +10,11 @@ class Animal:
         print("el animal emite un sonido")
 
 class Pajaro(Animal):
+    def __init__(self, color, edad,altura_vuelo):
+        super().__init__(color, edad) 
+        self.altura_vuelo = altura_vuelo
+
+
     def hablar(self):
         print("pio, pio")
     def volar(self,metros):
@@ -17,6 +22,8 @@ class Pajaro(Animal):
 
 
 
-piolin= Pajaro("amarillo",3)
+piolin= Pajaro("amarillo",3,60)  
 
-piolin.volar(20)
+print(piolin.altura_vuelo)
+piolin.nacer()
+piolin.hablar()
