@@ -18,4 +18,12 @@ oveja=Oveja("Dolly")
 
 vaca.hablar()
 oveja.hablar()
+
+
+print("-------------------")
+
+animales = [vaca, oveja]
+
+for animal in animales:
+    animal.hablar()
         
