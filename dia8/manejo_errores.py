@@ -5,8 +5,9 @@ def suma():
 
 try:
     suma()
-except:
+except ValueError:
     print("Algo malo sucedio  en el programa")
-
+else:
+    print("hiciste todo bien")
 finally:
     print("El programa ha finalizado")
