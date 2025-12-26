@@ -7,6 +7,8 @@ try:
     suma()
 except ValueError:
     print("Algo malo sucedio  en el programa")
+except TypeError:
+    print("estas intenando concatenar cosas que no son numeros")
 else:
     print("hiciste todo bien")
 finally:
