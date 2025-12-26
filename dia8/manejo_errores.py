@@ -13,3 +13,19 @@ else:
     print("hiciste todo bien")
 finally:
     print("El programa ha finalizado")
+
+
+
+
+def pedir_numero():
+    while True:
+        try:
+            num= int(input("Ingresa un número entero: "))
+        except ValueError:
+            print("Eso no es un número entero. Por favor, intenta de nuevo.")
+        else:
+            print("Ingresaste el número ",num )
+            break
+    print("Gracias por ingresar un número entero:", num)
+
+pedir_numero()
