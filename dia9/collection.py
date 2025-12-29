@@ -1,4 +1,4 @@
-from collections import Counter, defaultdict   # importar Counter
+from collections import Counter, defaultdict, namedtuple
 
 
 numeros = [1,2,5,4,5,6,8,7,8,5,6,2,3,1,4,2,5,8,9,7,4,23,6] # lista de numeros 
@@ -14,3 +14,9 @@ mi_dic['Uno']= 'Verde'
 print(mi_dic['Dos'])
 print('------')
 print(mi_dic)
+
+print('------')
+
+persona= namedtuple('Persona',['nombre','altura','peso'])
+ariel= persona('camilo',1.80,75)
+print(ariel.peso)
