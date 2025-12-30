@@ -21,3 +21,6 @@ while se_ejecuta:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             se_ejecuta = False
+    pantalla.fill((219, 251, 251))
+    pygame.display.update()
+    
