@@ -13,6 +13,7 @@ pantalla= pygame.display.set_mode((800,600))
 pygame.display.set_caption("Invasion espacial")
 icono= pygame.image.load("ovni.png")
 pygame.display.set_icon(icono)
+fondo= pygame.image.load("Fondo.jpg")
 
 #jugador
 img_jugador = pygame.image.load("cohete.png")
@@ -28,6 +29,14 @@ enemigo_x_cambio=0.3
 enemigo_y_cambio=50
 
 
+#bala
+img_bala = pygame.image.load("bala.png")
+bala_x= 0
+bala_y = 500
+bala_y_cambio=1
+bala_visible = False 
+
+
 
 
 #funcion jugador
@@ -39,25 +48,35 @@ def jugador(x,y):
 def enemigo(x,y):
     pantalla.blit(img_enemigo,(x,y))
 
+#funcion disparar bala
+def disparar_bala(x,y):
+    global bala_visible
+    bala_visible= True 
+    pantalla.blit(img_bala,(x+16,y+10))
 #loop del juego
 se_ejecuta= True
 
 while se_ejecuta:
-    pantalla.fill((29, 251, 251))
+    #imagen de fondo
+    pantalla.blit(fondo,(0,0))
     #evento cerrar
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             se_ejecuta = False
-        #evento presionar flechas 
+        #evento presionar teclas
         if evento.type  ==pygame.KEYDOWN:
             if evento.key ==pygame.K_LEFT:
                 jugador_x_cambio -=0.3
             if evento.key ==pygame.K_RIGHT:
                 jugador_x_cambio +=0.3  
-        #evento soltar flechas 
+            if evento.key == pygame.K_SPACE:
+                disparar_bala(jugador_x,bala_y)
+
+        #evento soltar teclas 
         if evento.type  ==pygame.KEYUP:
             if evento.key ==pygame.K_LEFT or evento.key ==pygame.K_RIGHT:
                 jugador_x_cambio =0
+        
     #modificar ubicacion    del jugador        
     jugador_x+=jugador_x_cambio
 
@@ -76,6 +95,11 @@ while se_ejecuta:
     elif enemigo_x >=736:
         enemigo_x_cambio=-0.3
         enemigo_y+=enemigo_y_cambio
+
+    #movimiento bala
+    if bala_visible:
+        disparar_bala(jugador_x,bala_y)
+        bala_y-= bala_y_cambio
 
         
 
