@@ -1,5 +1,6 @@
 import pygame
 import random 
+import math 
 #inicializar pygame
 pygame.init()
 
@@ -33,14 +34,12 @@ enemigo_y_cambio=50
 img_bala = pygame.image.load("bala.png")
 bala_x= 0
 bala_y = 500
-<<<<<<< HEAD
 bala_x=0
-=======
->>>>>>> 0c720372322661865d13a8670a8c7fbb1083fbff
 bala_y_cambio=1
 bala_visible = False 
 
-
+#puntaje
+puntaje=0 
 
 
 #funcion jugador
@@ -57,6 +56,17 @@ def disparar_bala(x,y):
     global bala_visible
     bala_visible= True 
     pantalla.blit(img_bala,(x+16,y+10))
+
+
+# funcion dectetar coliciones 
+
+def hay_colision(x_1,y_1,x_2,y_2):
+    distancia=  math.sqrt(math.pow(x_1-x_2, 2) + math.pow ( y_2 - y_1, 2))
+    if distancia < 27:
+        return True 
+    else:
+        return False
+                 
 #loop del juego
 se_ejecuta= True
 
@@ -74,14 +84,10 @@ while se_ejecuta:
             if evento.key ==pygame.K_RIGHT:
                 jugador_x_cambio +=0.3  
             if evento.key == pygame.K_SPACE:
-<<<<<<< HEAD
-                if not  bala_visible:
+                if not bala_visible:
 
                     bala_x=jugador_x
                     disparar_bala(bala_x,bala_y)
-=======
-                disparar_bala(jugador_x,bala_y)
->>>>>>> 0c720372322661865d13a8670a8c7fbb1083fbff
 
         #evento soltar teclas 
         if evento.type  ==pygame.KEYUP:
@@ -108,18 +114,22 @@ while se_ejecuta:
         enemigo_y+=enemigo_y_cambio
 
     #movimiento bala
-<<<<<<< HEAD
     if bala_y <=-64:
         bala_y=500 
         bala_visible= False
     if bala_visible:
         disparar_bala(bala_x,bala_y)
-=======
-    if bala_visible:
-        disparar_bala(jugador_x,bala_y)
->>>>>>> 0c720372322661865d13a8670a8c7fbb1083fbff
         bala_y-= bala_y_cambio
 
+    #colision
+    colision=hay_colision(enemigo_x,enemigo_y,bala_x,bala_y)
+    if colision:
+        bala_y=500 
+        bala_visible= False 
+        puntaje +=1
+        print(puntaje)
+        enemigo_x= random.randint(0,736)
+        enemigo_y = random.randint(50,200)
         
 
     jugador(jugador_x,jugador_y)
