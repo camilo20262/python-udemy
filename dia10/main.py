@@ -43,7 +43,7 @@ def enemigo(x,y):
 se_ejecuta= True
 
 while se_ejecuta:
-    pantalla.fill((219, 251, 251))
+    pantalla.fill((29, 251, 251))
     #evento cerrar
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
