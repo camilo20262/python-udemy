@@ -33,7 +33,10 @@ enemigo_y_cambio=50
 img_bala = pygame.image.load("bala.png")
 bala_x= 0
 bala_y = 500
+<<<<<<< HEAD
 bala_x=0
+=======
+>>>>>>> 0c720372322661865d13a8670a8c7fbb1083fbff
 bala_y_cambio=1
 bala_visible = False 
 
@@ -71,10 +74,14 @@ while se_ejecuta:
             if evento.key ==pygame.K_RIGHT:
                 jugador_x_cambio +=0.3  
             if evento.key == pygame.K_SPACE:
+<<<<<<< HEAD
                 if not  bala_visible:
 
                     bala_x=jugador_x
                     disparar_bala(bala_x,bala_y)
+=======
+                disparar_bala(jugador_x,bala_y)
+>>>>>>> 0c720372322661865d13a8670a8c7fbb1083fbff
 
         #evento soltar teclas 
         if evento.type  ==pygame.KEYUP:
@@ -101,11 +108,16 @@ while se_ejecuta:
         enemigo_y+=enemigo_y_cambio
 
     #movimiento bala
+<<<<<<< HEAD
     if bala_y <=-64:
         bala_y=500 
         bala_visible= False
     if bala_visible:
         disparar_bala(bala_x,bala_y)
+=======
+    if bala_visible:
+        disparar_bala(jugador_x,bala_y)
+>>>>>>> 0c720372322661865d13a8670a8c7fbb1083fbff
         bala_y-= bala_y_cambio
 
         
