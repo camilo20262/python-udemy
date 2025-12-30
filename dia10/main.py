@@ -13,11 +13,23 @@ pygame.display.set_caption("Invasion espacial")
 icono= pygame.image.load("ovni.png")
 pygame.display.set_icon(icono)
 
+#jugador
+img_jugador = pygame.image.load("cohete.png")
+jugador_x= 365
+jugador_y = 528
+
+def jugador():
+    pantalla.blit(img_jugador,(jugador_x,jugador_y))
+
 
 #loop del juego
 se_ejecuta= True
 
 while se_ejecuta:
+    pantalla.fill((219, 251, 251))
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             se_ejecuta = False
+    jugador()
+    pygame.display.update()
+    
