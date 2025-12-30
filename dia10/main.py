@@ -18,8 +18,8 @@ img_jugador = pygame.image.load("cohete.png")
 jugador_x= 365
 jugador_y = 528
 
-def jugador():
-    pantalla.blit(img_jugador,(jugador_x,jugador_y))
+def jugador(x,y):
+    pantalla.blit(img_jugador,(x,y))
 
 
 #loop del juego
@@ -30,6 +30,6 @@ while se_ejecuta:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             se_ejecuta = False
-    jugador()
+    jugador(jugador_x,jugador_y)
     pygame.display.update()
     
