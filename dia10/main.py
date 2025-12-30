@@ -1,8 +1,18 @@
 import pygame
+#inicializar pygame
 pygame.init()
+
+#crear la pantalla
 
 pantalla= pygame.display.set_mode((800,600))
 
+
+#titulo e icono
+
+pygame.display.set_caption("Invasion espacial")
+
+
+#loop del juego
 se_ejecuta= True
 
 while se_ejecuta:
