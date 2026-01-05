@@ -56,7 +56,6 @@ fuente=pygame.font.Font('freesansbold.ttf', 32)
 texto_x=10
 texto_Y=10
 
-#mostrar puntaje 
 
 #texto final del juego 
 
