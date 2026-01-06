@@ -1,3 +1,4 @@
+from sqlite3 import SQLITE_DBCONFIG_ENABLE_QPSG
 from tkinter import * 
 
 #inicar tkinter
@@ -63,6 +64,22 @@ panel_postres= LabelFrame(panel_izquierdo,text='Postres',font=('Dosis',19,'bold'
                           bd=1,relief=FLAT,fg='azure4')
 
 panel_postres.pack(side=LEFT)
+
+#panel derecha 
+panel_derecha= Frame(aplicacion,bd=1,relief=FLAT)
+panel_derecha.pack(side=RIGHT)
+
+#panel_recibo=
+panel_recibo= Frame(aplicacion,bd=1,relief=FLAT,bg='burlywood')
+panel_recibo.pack()
+
+#panel_calculadora=
+panel_calculadora= Frame(aplicacion,bd=1,relief=FLAT,bg='burlywood')
+panel_calculadora.pack()
+
+#panel_botones=
+panel_botones= Frame(aplicacion,bd=1,relief=FLAT,bg='burlywood')
+panel_botones.pack()
 
 
 
