@@ -32,5 +32,40 @@ etiqueta_titulo= Label(panel_superior,text='Sistema de Facturacion', fg='azure4'
 
 etiqueta_titulo.grid(row=0,column=0)
 
+
+#panel izquierdo
+panel_izquierdo= Frame(aplicacion, bd =1, relief=FLAT)
+panel_izquierdo.pack(side=  LEFT)
+
+
+#panel costos 
+panel_costos=Frame(panel_izquierdo,bd=1, relief=FLAT)
+panel_costos.pack(side=  BOTTOM)
+
+#panel comidas
+
+panel_comidas= LabelFrame(panel_izquierdo,text='Comida',font=('Dosis',19,'bold'),
+                          bd=1,relief=FLAT,fg='azure4')
+
+panel_comidas.pack(side=LEFT)
+
+
+#panel bebidas
+panel_bebidas= LabelFrame(panel_izquierdo,text='Bebidas',font=('Dosis',19,'bold'),
+                          bd=1,relief=FLAT,fg='azure4')
+
+panel_bebidas.pack(side=LEFT)
+
+
+
+#panel postres
+panel_postres= LabelFrame(panel_izquierdo,text='Postres',font=('Dosis',19,'bold'),
+                          bd=1,relief=FLAT,fg='azure4')
+
+panel_postres.pack(side=LEFT)
+
+
+
+
 # evitar que la pantalla se cierre
 aplicacion.mainloop()
