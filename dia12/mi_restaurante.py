@@ -88,6 +88,14 @@ lista_comidas = ['pollo', 'coredero', 'salmon' 'merluza', 'kebab', 'pizza1', 'pi
 lista_bebidas = ['agua', 'soda', 'jugo', 'cola', 'vino1', 'vino2', 'cerveza1', 'cerveza2','cerveza3']
 lista_postres = ['helado', 'fruta', 'brownies', 'flan', 'mousse','pastel1', 'pastel2','pastel3']
 
+contador=0
+
+for comida in lista_comidas:
+    comida = Checkbutton(panel_comidas,text=comida.title(), font=('Dosis',19,'bold'),onvalue=1,offvalue=0)
+    comida.grid(row=contador, column=0, sticky=W)
+    contador +=1
+
+
 
 # evitar que la pantalla se cierre
 aplicacion.mainloop()
