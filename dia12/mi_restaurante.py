@@ -26,5 +26,11 @@ aplicacion.config(bg='burlywood')
 panel_superior =Frame(aplicacion, bd =1, relief=FLAT)
 panel_superior.pack(side=TOP)
 
+#etiqueta titulo
+etiqueta_titulo= Label(panel_superior,text='Sistema de Facturacion', fg='azure4',
+                       font=('Dosis',58),bg='burlywood',width=27)
+
+etiqueta_titulo.grid(row=0,column=0)
+
 # evitar que la pantalla se cierre
 aplicacion.mainloop()
