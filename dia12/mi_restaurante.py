@@ -22,6 +22,9 @@ aplicacion.title('Mi restaurante           Sistema de facturacion')
 aplicacion.config(bg='burlywood')
 
 
+#panel superior 
+panel_superior =Frame(aplicacion, bd =1, relief=FLAT)
+panel_superior.pack(side=TOP)
 
 # evitar que la pantalla se cierre
 aplicacion.mainloop()
