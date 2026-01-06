@@ -17,6 +17,11 @@ aplicacion.resizable(False,False)
 aplicacion.title('Mi restaurante           Sistema de facturacion')
 
 
+#color de fondo de la ventana
+
+aplicacion.config(bg='burlywood')
+
+
 
 # evitar que la pantalla se cierre
 aplicacion.mainloop()
