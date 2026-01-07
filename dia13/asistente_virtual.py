@@ -103,4 +103,30 @@ def pedir_hora():
 def saludo_inicial():
     #decir el saludo 
     hablar('Hola, soy elena tu asistente personal, como te puedo ayudar el día de hoy?')
-saludo_inicial()
+
+def pedir_cosas():
+    #activar saludo 
+    saludo_inicial()
+    # variable de corte 
+    comenzar = True 
+
+
+    #loop central 
+    while comenzar:
+        #activar el micro y guardar el pedido en un string
+        pedido = transformar_audio_text().lower()
+        if 'abrir youtube' in pedido:
+            hablar('Con gusto, estoy abriendo youTube')
+            webbrowser.open('https://www.youtube.com')
+            continue
+        elif 'abrir navegador' in pedido:
+            hablar ('Claro, estoy en eso')
+            webbrowser.open('https://www.google.com')
+            continue
+        elif 'qué dia es hoy' in pedido:
+            pedir_dia()
+            continue
+        elif 'qué hora es' in pedido:
+            pedir_hora()
+        continue
+pedir_cosas()
