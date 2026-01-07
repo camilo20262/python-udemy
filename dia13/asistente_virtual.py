@@ -51,3 +51,16 @@ def transformar_audio_text():
 
 # Ejecutar función
 transformar_audio_text()
+
+
+#funcion para que el asistente pueda ser escuchado
+
+
+def hablar(mensaje):
+    #encender el motor de pyttsx3
+    engine= pyttsx3.init()
+
+    #pronunciar mensaje 
+    engine.say(mensaje)
+    engine.runAndWait()
+
