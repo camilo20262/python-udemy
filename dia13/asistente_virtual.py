@@ -55,7 +55,7 @@ def transformar_audio_text():
 
 
 # Ejecutar función
-transformar_audio_text()
+#transformar_audio_text()
 
 
 #funcion para que el asistente pueda ser escuchado
@@ -98,4 +98,9 @@ def pedir_hora():
     print(hora)
     # decir la hora 
     hablar(hora)
-pedir_hora()
+
+
+def saludo_inicial():
+    #decir el saludo 
+    hablar('Hola, soy elena tu asistente personal, como te puedo ayudar el día de hoy?')
+saludo_inicial()
