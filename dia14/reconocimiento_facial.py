@@ -10,6 +10,40 @@ foto_prueba = fr.load_image_file('FotoB.jpg')
 foto_control = cv2.cvtColor(foto_control, cv2.COLOR_BGR2RGB)
 foto_prueba = cv2.cvtColor(foto_prueba, cv2.COLOR_BGR2RGB)
 
+# -------------------------------
+# LOCALIZAR CARAS
+# -------------------------------
+
+# Cara control
+lugar_cara_A = fr.face_locations(foto_control)[0]
+cara_codificada_A = fr.face_encodings(foto_control)[0]
+
+# Cara prueba
+lugar_cara_B = fr.face_locations(foto_prueba)[0]
+cara_codificada_B = fr.face_encodings(foto_prueba)[0]
+
+# -------------------------------
+# DIBUJAR RECTÁNGULOS
+# -------------------------------
+
+# Rectángulo cara control
+cv2.rectangle(
+    foto_control,
+    (lugar_cara_A[3], lugar_cara_A[0]),  # esquina superior izquierda
+    (lugar_cara_A[1], lugar_cara_A[2]),  # esquina inferior derecha
+    (0, 255, 0),
+    2
+)
+
+# Rectángulo cara prueba
+cv2.rectangle(
+    foto_prueba,
+    (lugar_cara_B[3], lugar_cara_B[0]),
+    (lugar_cara_B[1], lugar_cara_B[2]),
+    (0, 255, 0),
+    2
+)
+
 
 #mostrar las imagenes
 cv2.imshow('Foto de control', foto_control)
