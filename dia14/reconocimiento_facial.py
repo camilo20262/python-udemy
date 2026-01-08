@@ -9,3 +9,11 @@ foto_prueba = fr.load_image_file('FotoB.jpg')
 # pasar imagenes a rgb
 foto_control = cv2.cvtColor(foto_control, cv2.COLOR_BGR2RGB)
 foto_prueba = cv2.cvtColor(foto_prueba, cv2.COLOR_BGR2RGB)
+
+
+#mostrar las imagenes
+cv2.imshow('Foto de control', foto_control)
+cv2.imshow('Foto de prueba', foto_prueba)
+
+# mantener programa abierto  
+cv2.waitKey(0)
