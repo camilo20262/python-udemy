@@ -53,5 +53,10 @@ print('¿Son la misma persona?: ', resultado)
 cv2.imshow('Foto de control', foto_control)
 cv2.imshow('Foto de prueba', foto_prueba)
 
+#medida de distancia 
+distancia= fr.face_distance([cara_codificada_A], cara_codificada_B)
+print('Distancia entre las caras: ', distancia)
+
+
 # mantener programa abierto  
 cv2.waitKey(0)
