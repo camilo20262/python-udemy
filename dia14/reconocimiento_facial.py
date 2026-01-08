@@ -44,6 +44,10 @@ cv2.rectangle(
     2
 )
 
+#REALIZAR COMPARACIÓN
+resultado= fr.compare_faces([cara_codificada_A], cara_codificada_B)
+print('¿Son la misma persona?: ', resultado)
+
 
 #mostrar las imagenes
 cv2.imshow('Foto de control', foto_control)
