@@ -127,3 +127,8 @@ array_9.min()
 
 # Cambiamos la forma del array_9 por una de 9x1, y lo almacenamos como array_11
 array_11= array_9.reshape(9,1)
+
+# Comparamos el array_9 y el array_10, para saber cuáles elementos del array_9 son mayores a los del array_10
+
+array_12 = array_9 > array_10
+array_12
