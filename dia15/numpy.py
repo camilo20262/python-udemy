@@ -73,3 +73,7 @@ array_4[1]
 
 # Extraemos los dos primeros datos de las primeras dos filas del array_4
 array_4[:2,:2]
+
+# Creamos dos arrays de tamaño 3x4: uno relleno de números aleatorios entre 0 y 10, y otro relleno de unos
+array_5= np.random.randint(0,10,(3,4))
+array_6=np.ones((3,4))
