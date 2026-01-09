@@ -96,3 +96,8 @@ array_8 = np.ones((4,3))
 
 # Restamos el array_8 al array_7
 array_8 - array_7
+
+
+# Creamos otros dos arrays de tamaño 3x3 con números aleatorios del 1 al 5
+array_9= np.random.randint(1,5,(3,3))
+array_10= np.random.randint(1,5,(3,3))
