@@ -15,4 +15,7 @@ array_tridi= np.array([[[1,2,3],
                         [4,5,6]],
                        [[7,8,9],
                         [10,11,12]]])
+
+# Atributos del array unidimensional (forma, número de dimensiones, tipos de datos, tamaño, y tipo)
+array_unids.shape,array_unids.ndim, array_unids.dtype,array_unids.size,type(array_unids)
                          
