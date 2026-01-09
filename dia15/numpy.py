@@ -45,4 +45,9 @@ zero
 
 # Creamos un array de números en el rango de 0 a 100, con un paso de 5
 array_1 = np.arange(0,101,5)
-array_
+array_1
+
+
+# Creamos un array de números aleatorios enteros comprendidos en entre 0 y 10, de tamaño (2, 5)
+array_2 = np.random.randint(0,10,(2,5))
+array_2
