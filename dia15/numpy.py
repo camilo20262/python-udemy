@@ -70,3 +70,6 @@ np.unique(array_4)
 
 # Extraemos el elemento de índice 1 del array_4
 array_4[1]
+
+# Extraemos los dos primeros datos de las primeras dos filas del array_4
+array_4[:2,:2]
