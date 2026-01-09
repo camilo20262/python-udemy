@@ -51,3 +51,9 @@ array_1
 # Creamos un array de números aleatorios enteros comprendidos en entre 0 y 10, de tamaño (2, 5)
 array_2 = np.random.randint(0,10,(2,5))
 array_2
+
+
+
+# Creamos un array de números aleatorios decimales comprendidos en entre 0 y 1, de tamaño (3, 5)
+array_3 = np.random.random((3,5))
+array_3
