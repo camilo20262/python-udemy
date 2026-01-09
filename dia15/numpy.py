@@ -132,3 +132,6 @@ array_11= array_9.reshape(9,1)
 
 array_12 = array_9 > array_10
 array_12
+
+# Veamos sus nuevos tipos de datos
+array_12.dtype
