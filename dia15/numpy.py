@@ -93,3 +93,6 @@ array_6 + array_7  # Esto nos dará un error, ya que las dimensiones no son comp
 
 # Entonces crearemos otro array de tamaño (4,3) lleno de unos
 array_8 = np.ones((4,3))
+
+# Restamos el array_8 al array_7
+array_8 - array_7
