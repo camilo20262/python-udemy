@@ -57,3 +57,9 @@ array_2
 # Creamos un array de números aleatorios decimales comprendidos en entre 0 y 1, de tamaño (3, 5)
 array_3 = np.random.random((3,5))
 array_3
+# Establecemos la "semilla" de números aleatorios en 27
+
+
+# Creamos un array de números aleatorios enteros comprendidos en entre 0 y 10, de tamaño (3, 5)
+array_4 = np.random.randint(0,10,(5,8))
+array_4
