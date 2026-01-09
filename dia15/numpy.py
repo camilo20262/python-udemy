@@ -106,3 +106,7 @@ array_10= np.random.randint(1,5,(3,3))
 # Multiplicamos los últimos dos arrays entre sí
 
 array_9* array_10
+
+# Elevamos el array_9 al cuadrado
+
+array_9 **2
