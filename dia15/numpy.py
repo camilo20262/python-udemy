@@ -101,3 +101,8 @@ array_8 - array_7
 # Creamos otros dos arrays de tamaño 3x3 con números aleatorios del 1 al 5
 array_9= np.random.randint(1,5,(3,3))
 array_10= np.random.randint(1,5,(3,3))
+
+
+# Multiplicamos los últimos dos arrays entre sí
+
+array_9* array_10
