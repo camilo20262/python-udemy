@@ -114,3 +114,7 @@ array_9 **2
 # Buscamos la raíz cuadrada del array_10
 
 np.sqrt(array_10)
+
+
+# Hallamos el promedio de los valores del array_9
+array_9.mean()
