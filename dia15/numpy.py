@@ -24,4 +24,10 @@ array_bidi.shape,array_bidi.ndim, array_bidi.dtype,array_bidi.size,type(array_bi
 
 # Atributos del array tridimensional
 array_tridi.shape,array_tridi.ndim, array_tridi.dtype,array_tridi.size,type(array_tridi)
+
+# Importamos pandas como pd, y creamos un DataFrame a partir del array bidimensional
+
+import pandas as pd 
+datos= pd.DataFrame(array_bidi)
+datos
                          
