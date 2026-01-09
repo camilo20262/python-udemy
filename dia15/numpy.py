@@ -110,3 +110,7 @@ array_9* array_10
 # Elevamos el array_9 al cuadrado
 
 array_9 **2
+
+# Buscamos la raíz cuadrada del array_10
+
+np.sqrt(array_10)
