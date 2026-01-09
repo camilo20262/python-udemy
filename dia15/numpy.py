@@ -124,3 +124,6 @@ array_9.max()
 
 # Hallamos el valor mínimo de los valores del array_9
 array_9.min()
+
+# Cambiamos la forma del array_9 por una de 9x1, y lo almacenamos como array_11
+array_11= array_9.reshape(9,1)
