@@ -57,6 +57,12 @@ cv2.imshow('Foto de prueba', foto_prueba)
 distancia= fr.face_distance([cara_codificada_A], cara_codificada_B)
 print('Distancia entre las caras: ', distancia)
 
+#mostrar las imagenes
+cv2.imshow('Foto de control', foto_control)
+cv2.imshow('Foto de prueba', foto_prueba)
+
+#medida de distancia 
+
 
 # mantener programa abierto  
 cv2.waitKey(0)
