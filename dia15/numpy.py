@@ -30,4 +30,9 @@ array_tridi.shape,array_tridi.ndim, array_tridi.dtype,array_tridi.size,type(arra
 import pandas as pd 
 datos= pd.DataFrame(array_bidi)
 datos
+
+# Creamos un array de tamaño 4x3, formado únicamente por unos (1)
+
+unos= np.ones((4,3))
+unos
                          
