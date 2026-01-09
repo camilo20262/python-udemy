@@ -121,3 +121,6 @@ array_9.mean()
 
 # Hallamos el valor máximo de los valores del array_9
 array_9.max()
+
+# Hallamos el valor mínimo de los valores del array_9
+array_9.min()
