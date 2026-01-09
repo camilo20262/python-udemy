@@ -63,3 +63,7 @@ array_3
 # Creamos un array de números aleatorios enteros comprendidos en entre 0 y 10, de tamaño (3, 5)
 array_4 = np.random.randint(0,10,(5,8))
 array_4
+
+
+# Encontramos los valores únicos del array_4
+np.unique(array_4)
