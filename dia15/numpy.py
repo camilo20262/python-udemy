@@ -35,4 +35,9 @@ datos
 
 unos= np.ones((4,3))
 unos
-                         
+
+
+# Creamos un array de tamaño 2x4x3, formado únicamente por ceros (0)
+
+zero= np.zeros((2,4,3))
+zero       
