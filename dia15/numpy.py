@@ -67,3 +67,6 @@ array_4
 
 # Encontramos los valores únicos del array_4
 np.unique(array_4)
+
+# Extraemos el elemento de índice 1 del array_4
+array_4[1]
