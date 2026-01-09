@@ -88,4 +88,8 @@ array_7 = np.ones((4,3))
 
 
 # Intentaremos sumar los arrays 6 y 7
-array_6 + array_7 
+array_6 + array_7  # Esto nos dará un error, ya que las dimensiones no son compatibles para la suma
+
+
+# Entonces crearemos otro array de tamaño (4,3) lleno de unos
+array_8 = np.ones((4,3))
