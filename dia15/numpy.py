@@ -40,4 +40,9 @@ unos
 # Creamos un array de tamaño 2x4x3, formado únicamente por ceros (0)
 
 zero= np.zeros((2,4,3))
-zero       
+zero    
+
+
+# Creamos un array de números en el rango de 0 a 100, con un paso de 5
+array_1 = np.arange(0,101,5)
+array_
