@@ -81,3 +81,7 @@ array_6=np.ones((3,4))
 # Sumamos los dos arrays
 
 array_5 +array_6
+
+
+# Creamos ahora un array de tamaño (4,3) lleno de unos
+array_7 = np.ones((4,3))
