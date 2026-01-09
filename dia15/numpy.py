@@ -118,3 +118,6 @@ np.sqrt(array_10)
 
 # Hallamos el promedio de los valores del array_9
 array_9.mean()
+
+# Hallamos el valor máximo de los valores del array_9
+array_9.max()
